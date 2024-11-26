@@ -3,15 +3,32 @@
     <head>
         <title>Taraxacum-Wikipedia</title>
         <link rel="stylesheet" href="style.css">
+        <style>
+            h3 {
+                text-decoration: underline;
+                font-size: 20px;
+            }
+
+            #source {
+                text-align: right;
+                font-style: italic;
+            }
+
+            .article {
+                color: #110b64;
+                font-size: 16px;
+                font-weight: 700;
+            }                     
+        </style>
     </head>
 
     <body>
         <a href="https://en.wikipedia.org/wiki/Taraxacum" target="_blank">LINK</a>
-        <h1><em>Taraxacum</em></h1>
+        <h1 class="title" style="text-align: center"><em>Taraxacum</em></h1>
         <hr />
-        <p><u>Article</u></p>
-        <p>From Wikipedia, the free encyclopedia</p>
-        <p>
+        <p class="article"><u>Article</u></p>
+        <p id="source" style="color:#110b64;font-weight:600">From Wikipedia, the free encyclopedia</p>
+        <p id="introduction">
             <em>"Dandelion" redirects here. It may refer to any species of the genus</em> Taraxacum <em>or specifically to</em> 
             <a href="https://en.wikipedia.org/wiki/Taraxacum_officinale" target="_blank">Taraxacum officinale</a>.
             <i>For similar<br />plants, see 
@@ -20,7 +37,7 @@
             <a href="https://en.wikipedia.org/wiki/Dandelion_(disambiguation)" target="_blank">Dandelion (disambiguation)</a></i>
         </p> 
 
-        <p>
+        <p class="main-paragraph">
             <b><i>Taraxacum</i></b> (<a href="https://en.wikipedia.org/wiki/Help:IPA/English" target="_blank">/təˈræksəkəm/</a>)<sup>[3]</sup> is a large 
             <a href="https://en.wikipedia.org/wiki/Genus" target="_blank">genus </a> of
             <a href="https://en.wikipedia.org/wiki/Flowering_plant" target="_blank">flowering plants </a> in the family 
@@ -44,8 +61,8 @@
             <a href="https://en.wikipedia.org/wiki/Genus" target="_blank">genus</a>.<sup>[8]</sup>
         </p>
         <br />
-        <h2>Classification</h2>
-        <h3>Selected species</h3>
+        <h2 class="sub-title" style="text-align: center">Classification</h2>
+        <h3 id="species-img" style="color:#110b64;font-weight:600; background-color: rgb(208, 202, 143)">Selected species</h3>
         <img width="120" height="120" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/T_albidum01.jpg/251px-T_albidum01.jpg" alt="T. albidum" />
         <img width="120" height="120" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Taraxacumcalifornicum.jpg/300px-Taraxacumcalifornicum.jpg" alt="T. californicum" />
         <img width="120" height="120" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/T_japonicum04.jpg/321px-T_japonicum04.jpg" alt="T. japonicum" />
