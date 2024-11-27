@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> HW3 </title>
+    </head>
+
+    <body>
+        <img width="200" height="80" src="UJP.PNG" alt="UJP" />
+        <img width="150" height="80" src="DLD-GDP.PNG" alt="DLD-GDP" />
+        <h2>ГОДИШНА ДАНОЧНА ПРИЈАВА <br /> за утврдување на данокот на личен доход</h2>
+        <form>
+            <table border="1" width="80%">
+                <tr>
+                    <td>
+                        <label for="EMBG">ЕМБГ</label>
+                        <input type="number" id="EMBG" name="EMBG"/>
+                    </td>
+                    <td rowspan="2">
+                        <label for="date&number">Датум и број</label>
+                        <textarea id="date&number" name="date&number" cols="33" rows="6"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="name&adress">Име и презиме и адреса на живеење за контакт</label>
+                        <textarea id="name&adress" name="name&adress" cols="35" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone">Телефон</label>
+                        <input type="number" id="phone" name="phone"/>
+                    </td>
+                    <td>Даночен период <br /><br />
+                        <label for="start-date">од</label>
+                        <input type="date" id="start-date" name="start-date"/>
+                        <label for="end-date">до</label>
+                        <input type="date" id="end-date" name="end-date"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">е-пошта</label>
+                        <input type="email" id="email" name="email"/>
+                    </td>
+                    <td>
+                        <label for="issued-date">Датум на издавање </label>
+                        <input type="date" id="issued-date" name="issued-date"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <label for="confirmation-date">Рок за потврдување </label>
+                        <input type="date" id="confirmation-date" name="confirmation-date"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <label for="folio-number">Фолио број </label>
+                        <input type="number" id="folio-number" name="folio-number"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <label for="correction">Службена <br />исправка </label>
+                        <input type="text" id="correction" name="correction"/>
+                    </td>
+                </tr>
+            </table>
+
+            <fieldset>
+                <legend>
+                    <h4>За корекција на пополнетите податоци внесете ги точните износи во празните полиња под податоците пополнети од Управата за јавни <br /> приходи, а во спротивно оставете ги непополнети.</h4>
+                    <h4>ОСТВАРЕН ДОХОД</h4>
+                </legend>
+                <table border="1" width="80%">
+                    <thead>
+                        <th colspan="3">Вид на остварен доход</th>
+                        <th>Бруто износ<br /> на доход</th>
+                        <th>Вкупен износ на<br /> платени<br /> придонеси /<br /> признаeни трошоци</th>
+                        <th>Вкупен износ на<br /> пресметан ДЛД</th>
+                        <th>Вкупен износ на<br /> платен ДЛД</th>
+                    </thead>
+                    <tbody>
+                        <tr> 
+                            <td colspan="3"><h5>1. Доход од работа</h5></td>
+                            <td colspan="4"></td>
+                        </tr>
+                        <tr> 
+                            <td colspan="3" rowspan="2">1.1. Плата и надоместоци на плата од работен однос и исплата
+                            <br /> по основ на деловна успешност на работодавачот </td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                        </tr>
+                        <tr> 
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                        </tr>
+                        <tr> 
+                            <td colspan="3" rowspan="2">1.2. Пензии </td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                        </tr>
+                        <tr> 
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                        </tr>
+                        <tr> 
+                            <td colspan="3" rowspan="2">1.3. Друг доход од работа <i>(од работен однос, регрес за годишен одмор, од органите на управување и надзор, на функционери, пратеници, советници, носители на јавни функции, судии поротници, вешти лица, стечајни управници, членови на МАНУ, спортисти, практична обука, пензиски надоместок, придонес во доброволен пензиски фонд, практиканска работа и договор за повремено или привремено вршење на услуги)</i> </td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                        </tr>
+                        <tr> 
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                        </tr>
+                        <tr> 
+                            <td colspan="3"rowspan="2"><h5>2. Доход од самостојна дејност</h5></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                        </tr> 
+                        <tr> 
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                        </tr>
+                        <tr> 
+                            <td colspan="3" rowspan="2"><h5>3. Доход од авторски и сродни права</h5></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                        </tr>
+                        <tr> 
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                        </tr>
+                        <tr> 
+                            <td colspan="3" rowspan="2"><h5>4. Доход од продажба на сопствени земјоделски производи</h5></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                        </tr>
+                        <tr> 
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                        </tr>
+                        <tr> 
+                            <td colspan="3" rowspan="2"><h5>5. Доход од права од индустриска сопственост</h5></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                        </tr>
+                        <tr> 
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                        </tr>
+                        <tr> 
+                            <td colspan="3" rowspan="2"><h5>6. Доход од закуп и подзакуп</h5></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                        </tr>
+                        <tr> 
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>        
+                            <td><input type="number" name="number"/></td>
+                        </tr>
+                        <tr> 
+                            <td colspan="3" rowspan="2"><h5>7.Доход од капитал (дивиденди и друг доход остварен со учество во добивката кај правни лица, камати од заеми и камати од хартии од вредност и друг доход од хартии од вредност или финансиски инструменти) </h5></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                        </tr>
+                        <tr> 
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                        </tr>
+                        <tr> 
+                            <td colspan="3" rowspan="2"><h5>8.Капитални добивки (остварени од продажба или размена на недвижен имот, хартии од вредност, учество во капиталот, друг подвижен и нематеријален имот)</h5></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                        </tr>
+                        <tr> 
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                        </tr>
+                        <tr> 
+                            <td colspan="3"rowspan="2"><h5>9. Добивки од игри на среќа</h5></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                        </tr>
+                        <tr> 
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                        </tr>
+                        <tr> 
+                            <td colspan="3" rowspan="2"><h5>10. Доход од осигурување</h5></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                        </tr>
+                        <tr> 
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                        </tr>
+                        <tr> 
+                            <td colspan="3"rowspan="2"><h5>11. Друг доход</h5></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                        </tr>
+                        <tr> 
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                        </tr>
+                        <tr> 
+                            <td colspan="3"><h5>12. ВКУПНО</h5></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                            <td><input type="number" name="number"/></td>
+                        </tr>
+                        <tr> 
+                            <td colspan="5" rowspan="2"><h3>13. ИЗНОС НА ДОНИРАНИ ФИНАНСИСКИ СРЕДСТВА</h3></td>
+                            <td colspan="2"><input type="number" name="number"/></td>
+                        </tr> 
+                        <tr> 
+                            <td colspan="2"><input type="number" name="number"/></td>
+                        </tr> 
+                    </tbody>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend><h3>УТВРДЕН ГОДИШЕН ДАНОК НА ЛИЧЕН ДОХОД</h3></legend>
+                <table border="1" width="80%">   
+                    <tr>
+                        <td rowspan="20">
+                            <ol>
+                                <li><b>Вкупен износ на остварен доход </b></li><br>
+                                <li><b> Вкупен износ на одбитоци</b><br><br>
+                                    <ul>
+                                        <li>Платени придонеси</li><br>
+                                        <li>Признаeни трошоци</li><br>
+                                    </ul>
+                                </li>
+                                <li><b> Искористеното даночно намалување при аконтативно оданочување</b></li><br> <br>
+                                <li><b> Основа за оданочување 4 = 1 - (2 + 3)</b><br><br>
+                                    <ul> 
+                                        <li>Даночна основа за примена на даночна стапка од 10%</li><br>
+                                        <li>Даночна основа за примена на даночна стапка од 15%</li><br>
+                                        <li>Даночна основа за примена на даночна стапка од 18%</li><br>
+                                    </ul> <br>
+                                </li>
+                                <li><b> Вкупно пресметан годишен данок на личен доход</b><br><br>
+                                   <ul>
+                                        <li>Пресметан годишен данок на личен доход со примена на даночна стапка од 10%</li><br>
+                                        <li>Пресметан годишен данок на личен доход со примена на даночна стапка од 15%</li><br>
+                                        <li>Пресметан годишен данок на личен доход со примена на даночна стапка од 18%</li><br>
+                                   </ul>
+                                </li><br>
+                                <li><b> Даночно ослободување по основ на донации во висина од 20% од годишниот даночен долг, но не повеќе од 24.000 денари</b></li><br>
+                                <li><b> Намалување на данокот на личен доход по други основи</b></li><br> 
+                                <li><b> Пресметан годишен данок за плаќање 8=5-(6+7)</b></li><br>
+                                <li><b> Ефективна стапка на ДЛД 9=5/1</b></li><br>
+                                <li><b> Вкупен износ на платен данок на личен доход во текот на годината</b></li><br>
+                                <li><b> Разлика за доплата на данок на личен доход 11=5-10</b></li><br>
+                                <li><b> Повеќе платен данок на личен доход</b><i style="font-size:12px"> (ако барате враќање на повеќе платениот данок, внесете “x” пред полето и задолжително наведете ја банката и трансакциската <br> сметка на која треба да се изврши враќање на повеќе платениот данок)</i></li>
+                            </ol>
+                        </td>
+                        <td><input type="number" name="number"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="number"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="number"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="number"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="number"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="number"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="number"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="number"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="number"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="number"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="number"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="number"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="number"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="number"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="number"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="number"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="number"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="number"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="number"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="number"/></td>
+                    </tr>
+                 
+                    <tr>
+                        <td colspan="2">
+                            <label for="account-number">Трансакциска сметка </label>
+                            <input type="number" id="account-number" name="account-number"/>
+                            <label for="bank-name">Назив на банка </label>
+                            <input type="text" id="bank-name" name="bank-name"/>   
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+       
+            <fieldset>
+                <legend><h3>ПОТВРДА НА ГОДИШНА ДАНОЧНА ПРИЈАВА</h3></legend>
+                    <input type="checkbox" id="confirmation" name="confirmation" />
+                    <label for="confirmation"><b>ПОТВРДУВАМ</b> дека податоците во годишната даночна пријава целосно се совпаѓаат со остварениот вкупен доход, износот на искористените одбитоци и платените аконтации на данокот на личен доход, во наведениот даночен период (календарска година).</label>
+                   <br />
+                   <br /> 
+                   <input type="checkbox" id="correction" name="correction" />
+                   <label for="correction"><b>КОРИГИРАМ</b> податоци во годишната даночна пријава кои не се совпаѓаат со остварениот вкупен доход, износот на искористените одбитоци и платените аконтации на данокот на личен доход, во наведениот даночен период (календарска година).</label> 
+                   <br />
+                   <br />
+            </fieldset>
+          
+            <fieldset>
+                <legend><h3>ПОТВРДИЛ/КОРИГИРАЛ</h3></legend>
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <label for="name">Назив/ <br />Име и презиме</label>
+                            <input type="text" id="name" name="name" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="EDB-EMBG">ЕДБ/ЕМБГ</label>
+                            <input type="number" id="EDB-EMBG" name="EDB-EMBG" />
+                        </td>
+                        <td>
+                            <label for="date">Датум на <br />пополнување</label>
+                            <input type="date" id="date" name="date" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="role">Својство</label>
+                            <input type="text" id="role" name="role" />
+                        </td>
+                        <td>
+                            <label for="signature">Потпис</label>
+                            <input type="text" id="signature" name="signature" />
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+           
+            <fieldset>
+                <legend><h3>ПОДАТОЦИ ЗА ПОТПИСНИКОТ</h3></legend>
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <label for="name">Име и презиме</label>
+                            <input type="text" id="name" name="name" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="EMBG">ЕМБГ</label>
+                            <input type="number" id="EMBG" name="EMBG" />
+                        </td>
+                        <td>
+                            <label for="date">Датум на <br />пополнување</label>
+                            <input type="date" id="date" name="date" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="role">Својство</label>
+                            <input type="text" id="role" name="role" />
+                        </td>
+                        <td>
+                            <label for="signature">Потпис</label>
+                            <input type="text" id="signature" name="signature" />
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+        <br />
+      
+        <br /> 
+        <br /> 
+        <h2>УПАТСТВО ЗА ПОПОЛНУВАЊЕ </h2>
+        <br />
+        <hr />
+        <p>
+            Управата за јавни приходи до граѓанинот доставува годишна даночна пријава (образец ДЛД-ГДП) за утврдување на годишен данок на личен доход, со однапред пополнети <br />податоци за доходот остварен во земјата и странство.<br />
+            Во образецот ДЛД-ГДП пополнети се податоците за доходот кои граѓанинот ги остварил во текот на календарската година и тоа: доход од работа, доход од самостојна <br />дејност, доход од авторски и сродни права, доход од продажба на сопствени земјоделски производи, доход од права од индустриска сопственост, доход од закуп и подзакуп,<br />доход од капитал, капитални добивки, добивки од игри на среќа, доход од осигурување и друг доход.<br />
+            Пополнетата годишна даночна пријава (образец ДЛД-ГДП) се доставува до граѓанинот најдоцна до 30 април во тековната година, за доходот што го остварил во претходната<br />година.
+            Должни сте годишната даночна пријава да ја потврдите или коригирате најдоцна до 31 мај во тековната година.<br />
+            Доколку пред истекот на рокот на застареност, Управата за јавни приходи утврди непријавен или неточно пријавен исплатен или остварен доход, на даночниот<br />обврзник му доставува Службена исправка на потврдената годишна даночна пријава.<br />
+            Доколку не ја потврдите или коригирате пополнетата годишна даночна пријава до 31 мај во тековната година, истата ќе се смета за ПОТВРДЕНА. Коригираната годишна <br />даночна пријава ја разгледува Управата за јавни приходи и во рок од 60 дена од поднесувањето на коригираната пријава ве известува повратно.
+        </p>
+        <br />
+        
+        <h2>Остварен доход</h2>
+        <p>За секој одделен “вид на остварен доход” внесен е износот во соодветните колони според видот на доходот.</p>
+        <ul>
+            <li><strong>Бруто износ на доход </strong>- во полето „Бруто износ на доход“ внесен е износот на бруто доходот за секој одделен вид на доход, односно збирот на нето доходот што сте го <br />примиле, зголемен за износот на данокот на личен доход и износот на искористените одбитоци во претходната година. По исклучок, кај доходот од реден број 2 (нето <br />доход остварен од вршење на самостојна дејност) внесен е износот на нето-доходот утврден во полето 22 од Даночниот биланс (образец ДЛД-ДБ).</li>
+            <li><strong>Вкупен износ на платени придонеси / признаени трошоци </strong>- внесен е износот на платените придонеси, како и трошоците што ја намалиле бруто-основата при <br />пресметување на аконтациите на данокот, а кои се утврдени во Законот за данокот на личен доход.<br />
+            На реден број 1.1. и реден број 1.2., покрај платените придонеси за пензиско и инвалидско осигурување, здравствено осигурување, дополнителен придонес за <br />здравствено осигурување и вработување, како одбитоци внесен е износот и на пресметаните придонеси за кои со посебни прописи е предвидено ослободување од <br />плаќање, но кои ја намалиле основата при пресметувањето на аконтациите на данокот.<br />
+            Кај доходот на реден број 2 (нето-доход остварен од вршење на самостојна дејност) како одбиток на нето-доходот е впишано само ослободувањето кое се пресметува од<br />нето-основата (член 28 ставови од (1) до (5) од Законот за данокот на личен доход или утврдено со друг закон), додека платените придонеси не се искажани како одбиток,<br />бидејќи се веќе вклучени како трошок при утврдувањето на нето доходот.<br />
+            Кај доходот на реден број 3, 4, 5, 6, 8 и 11 како одбитоци се наведени пресметаните износи на трошоци кои во Законот за данокот на личен доход се утврдени во <br />определен процент од бруто-основата</li>
+            <li><strong>Вкупен износ на пресметан ДЛД </strong>- внесени се износите на пресметаниот данок на личен доход во текот на календарската година (даночниот период).</li>
+            <li><strong>Вкупен износ на платен ДЛД </strong>- внесени се износите на платените аконтации на данокот на личен доход во текот на календарската година (даночниот период).</li>
+        </ul>
+        <br />
+        <h2>Износ на донирани финансиски средства</h2>
+        <p>Внесени се износите на вашите донирани финансиски средства во јавни дејности во претходната годината (даночен период).<br />
+        Доколку износите не се совпаѓаат со средствата кои вие сте ги донирале, во полето за корекција внесете го вкупниот износ на донирани финансиски средства во јавни дејности <br />во претходната година.</p>
+        <br />
+        <h2>Утврден годишен данок на личен доход</h2>
+        <p>Врз основа на податоците за остварениот доход, Управата за јавни приходи изврши утврдување на годишниот данок на личен доход, пресметаниот годишен данок за плаќање<br />и разликата за доплата на данокот на личен доход за наведениот даночен период (календарска година).<br />
+        Износот на повеќе платениот данок на личен доход можете да го оставите како аконтација за плаќање за нареден период или да го барате за враќање со запишување на <br />знак “x” пред полето од редниот број 12. Истовремено пополнете го и полето Трансакциска сметка и полето Назив на банка.</p>
+        <br />
+        <h2>Потврда на Годишна даночна пријава</h2>
+        <ul>
+            <li>Со означување на полето <b>ПОТВРДУВАМ</b> се согласувате и ја потврдувате точноста на податоците за доходот и утврдениот данок на личен доход кои се пополнети во<br />годишната даночна пријава од страна на Управата за јавни приходи.</li>
+            <li> Доколку го означите полето <b>КОРИГИРАМ</b>, задолжително во празните полиња (под податоците пополнети од Управата за јавни приходи) внесете ги точните износи за<br />соодветниот вид на доход, односно извршете корекција на пополнетите податоци за бруто износот на доходот кој сте го оствариле, износот на одбитоците и платените <br />аконтации на данокот на личен доход.<br />
+            <b>Напомена</b>: Не ги пополнувајте празните полиња кај видовите на доход за кои не вршите корекција на податоците пополнети од Управата за јавни приходи.</li>
+        </ul>
+        <br />
+        <p>Потврдата или корекцијата на Годишната даночна пријава можете да ја извршите по пат на пренос на податоци во електронска форма, преку системот е-Персонален данок <br /><a href="https://e-pdd.ujp.gov.mk" target="_blank">https://e-pdd.ujp.gov.mk</a> или во хартиена форма до Управата за јавни приходи.
+        <br />При пополнување на Годишната даночна пријава во хартиена форма, податоците внесете ги читливо и целосно. Податоците внесете ги во точно означените полиња.<br />Не впишувајте ништо во полињата кои ги пополнува Управата за јавни приходи.</p>
+        <br />
+        <h2>Потврдил/Коригирал </h2>
+        <ul>
+            <li>Задолжително внесете назив и ЕДБ на лицето кое ја потврдило/коригирало само во случај кога сте ополномоштиле правно лице или вршител на дејност<br />(сметководствено биро) во ваше име и за ваша сметка да ја потврди или коригира пријавата.<br />
+            Ополномоштеното правно лице или вршител на дејност (сметководствено биро) кое ја потврдило/коригирало ДЛД-ГДП, задолжително ја потпишува на означеното <br />место.</li>
+            <li> Задолжително внесете име и презиме и ЕМБГ на составувачот само во случај кога сте ополномоштиле друго физичко лице во ваше име и за ваша сметка да ја потврди<br />или коригира пријавата.<br />
+            Ополномоштеното физичко лице кое ја потврдило/коригирало ДЛД-ГДП, задолжително ја потпишува на означеното место.</li>
+        </ul>
+        <br />
+        <h2>Податоци за потписникот</h2>
+        <p>Задолжително внесете име и презиме, ЕМБГ и потпис на потписникот.<br /> Доколку потписник е ополномоштено лице, задолжително внесете го својството на потписникот</p>
+        <br />
+        <h2>Промена на адресни податоци</h2>
+        <p>Доколку вашите адресни и контакт податоци од пополнетата годишна даночна пријава не се точни, потребно е истите да ги ажурирате со повикување на Инфо центарот на УЈП  <br />(0800 33 000 или 02/3253 200), или да доставите пријава УЈП-РДО до Управата за јавни приходи.</p>
+        <br /><br /><br /><br />
+                
+        <hr />
+        <p><i>* Образецот е објавен во „Службен весник на РС.М.“, бр.101/2020 и важи од 15.04.2020</i></p>
+    </body>
+</html>
