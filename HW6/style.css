@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(242, 228, 239);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.site-nav {
+    position: fixed;
+    top: 30px;
+    right: 80px;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: black;
+    padding-left: 30px;
+}
+
+.site-content {
+    max-width: 1200px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    height: 600px; 
+}
+
+.site-content p {
+    float: right;
+    max-width: 550px;
+    text-align: justify;
+    clear: left;
+    font-size: 18px;
+    color: #135880;
+    font-style: italic;
+}
+
+.site-content img {
+    box-shadow: 3px 4px 9px 0px #6c6565;
+}
+
+.site-content h1 {
+    float: right; 
+    padding-top: 170px;
+    padding-right: 40px;
+    color: #135880;
+    font-style: italic;
+}
+
+.site-footer {
+    max-width: 1200px; 
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 2px solid black;
+}
+
+.site-footer p {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 200;
+    color:gray;
+}
+
+.site-footer p:nth-child(2) {
+    float:right; 
+}
