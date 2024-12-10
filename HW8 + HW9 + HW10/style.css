@@ -1,32 +1,24 @@
 body {
     background-color: rgb(187, 211, 246);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-body {
     display: grid;
-    grid-template-rows: 180px 1500px 250px;
-    justify-items: center;
+    grid-template-rows: 180px 1550px 200px;
     align-items: center;
     container-type: inline-size;
-    width: 100%;
     margin: 0;
 }
 
 .all-widgets {
     display: grid;
-    width: 100%;
     column-gap:10px;
     row-gap:50px;
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 450px 450px 450px;
+    grid-template-rows: 460px 460px 460px;
 }
 
 .widget-wrap {
-    max-width: 245px;
-    height: 450px; 
-    margin:0;
+    min-width: 230px; 
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -35,37 +27,35 @@ body {
     box-shadow: 5px 2px 4px 2px #8b7fe3;
     border-top-right-radius: 10%;
     border-bottom-left-radius: 10%;
+    padding: 5px;
 }
 
 .widget-column1 {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 300px;
+    align-items: center;
 }
 
 .widget-column1 img {
     width:175px;
     height:155px;
-    margin-left: 90px;
     border-radius: 50%;
     box-shadow: 5px 2px 4px 2px #8b7fe3;
 }
 
 .widget-column1 p {
     margin: 0;
-    padding-top: 20px;
     color: white;
     font-weight: 700;
-    padding-left: 30px;
     font-size: 16px;
+    text-align: center;
 }
 
 .widget-column2 {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    width: 200px;
     color: white;
 }
 
@@ -81,7 +71,7 @@ body {
 .widget-column2 p:nth-child(2) {
     font-size: 16px;
     font-weight: 400;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 
 .widget-column2 p:nth-child(3) {
@@ -95,25 +85,21 @@ body {
 }
 
 .header {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 .header-title {
     display: inline-block;
     font-size: 30px;
-    margin-bottom: 20px;
+    margin: 0;
 }
-
+    
 .nav {
     display: flex;
     gap: 50px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
 }
 
 .nav a {
@@ -123,23 +109,19 @@ body {
 
 .footer {
     display: flex; 
-    gap: 100px;
-    width: 100%;
+    gap: 50px;
     justify-content: center;
 }
 
-.footer-column {
-    height:200px;
-    font-size: 16px;
-}
-
 .footer-column h3 {
-    margin-top: 50px;
-    margin-bottom: 10px;
+    margin: 0;
+    margin-bottom: 20px;
 }
 
-.footer-column p {
-    margin: 0;
+.footer-column a {
+    color:black;
+    text-decoration: none;
+    display: block;
 }
 
 @container (max-width: 760px) {
@@ -147,7 +129,10 @@ body {
         row-gap:20px;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(9, 450px);
-        justify-content: center;
+    }
+
+    .widget-wrap {
+        min-width: 280px;
     }
 }
 
@@ -157,34 +142,49 @@ body {
     }
     
     .nav {
-        gap: 10px;
+        gap: 30px;
         margin-top: 10px;
         margin-bottom: 50px;
     }
-}
-
-@media screen and (max-width:760px) {
-    body {
-        grid-template-rows: 200px 4200px 400px;
-    }
-
-    .widget-wrap {
-        max-width: 300px;
-    }
 
     .footer {
-       flex-direction: column;
-       align-items: center;
-       gap:0px;
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
     }
-
+ 
     .footer-column h3 {
-        margin-top: 30px;
         margin-bottom: 3px;
     }
-
-    .footer-column {
-        height:auto;
+}
+    
+@media screen and (max-width:760px) {
+    body {
+        grid-template-rows: 200px 4200px 350px;
     }
 }
 
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.header-title {
+    animation: slideInLeft 2s ease-in-out 20ms 1 forwards;
+}
+
+.footer:hover {
+    transition: font-weight color 1s ease-in 1s;
+    font-weight: 600;
+    color: blue;
+}
+
+.widget-wrap:active {
+    transition: border 2ms ease-in-out;
+    border: 3px solid rgb(210, 224, 64);
+}
+  
